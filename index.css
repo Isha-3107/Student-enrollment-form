@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #efefef;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:2em;
+}
+
+.registrationcontainer{
+    color: white;
+    font-weight: 700;
+    justify-self: center;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    padding:1.5em;
+    display:grid;
+    gap:1.5em;
+    font-size: 20px;
+    background-color: #1F1D36;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    outline: auto;
+}
+.registrationcontainer input{
+    padding:0.7em;
+    outline:auto;
+    font-weight: 700;
+}
+.submit{
+    width:90%;
+    padding:1em;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: large;
+    outline: auto;
+}
+.output{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    justify-items: center;
+    width: 700px;
+    height: 200px;
+    margin: auto;
+}
+.addData{
+    text-align: center;
+    color: black;
+    font-size: large;
+    width:90%;
+    height:90%;
+    padding:3em;
+    background-color: white;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+.output .addData img{
+    width:150px;
+    height:150px;  
+}
+
+@media all and (max-width:900px){
+    .output{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0.5em;
+        justify-items: center;    
+    }
+}
+@media all and (max-width:400px){
+    .container{
+        padding:0.4em;
+    }
+    .registrationcontainer{
+        padding:0.5em;
+    }
+    .output{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:0.5em;
+        justify-items: center;
+    }
+}
